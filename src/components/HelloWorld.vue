@@ -19,7 +19,7 @@ export default {
   },
   methods:{
     emitEvent(evt){
-        this.$emit("my-event",{evt:evt,data:{id:1,name:'wilson.fu'}});
+        this.$emit("my-event",{evt:evt,data:{id:1,msg:this.inputVal}});
     }
   }
 }
