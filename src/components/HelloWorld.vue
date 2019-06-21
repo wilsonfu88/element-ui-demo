@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <input v-model="inputVal"/>
+    <button @click="emitEvent">向父组件传递数据</button>
   </div>
 </template>
 
@@ -9,6 +11,16 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  data(){
+    return{
+      'inputVal' : 'ok'
+    }
+  },
+  methods:{
+    emitEvent(evt){
+        this.$emit("my-event",{evt:evt,data:{id:1,name:'wilson.fu'}});
+    }
   }
 }
 </script>
@@ -28,5 +40,8 @@ li {
 }
 a {
   color: #42b983;
+}
+.hello{
+  border:solid 1px red;
 }
 </style>
