@@ -30,10 +30,12 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 添加git 远程仓储配置：
+
 [remote "origin"]
 	url = https://github.com/wilsonfu88/element-ui-demo.git
 
 	fetch = +refs/heads/*:refs/remotes/origin/*
+	
 [branch "master"]
 	remote = origin
 
