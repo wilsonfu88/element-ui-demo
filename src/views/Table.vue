@@ -50,11 +50,7 @@
               <img :src="dialogImgUrl"   />
       </el-dialog>
 
-      <div style="width:200px;height:200px;border:solid 1px red"  @click="divClick">
-        <span>
-           测试文字
-        </span>
-      </div>
+     
   </div>
 </template>
 <script>
